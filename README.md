@@ -1,22 +1,36 @@
-# PACIFIKA
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Portail central de l'écosystème logiciel M3LDEV.
+## Getting Started
 
-## Statut
+First, run the development server:
 
-Projet préparatoire privé.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-PACIFIKA servira à présenter et organiser les solutions SaaS développées par M3LDEV.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Rôle prévu
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-* Présenter l'écosystème M3LDEV.
-* Rediriger vers les produits actifs.
-* Servir de vitrine centrale pour les futures solutions.
-* Préparer une base commune pour la communication produit.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Priorité actuelle
+## Learn More
 
-Le développement actif reste concentré sur **MEKANO**.
+To learn more about Next.js, take a look at the following resources:
 
-PACIFIKA est réservé et documenté afin de préparer l'écosystème sans disperser le développement actuel.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
