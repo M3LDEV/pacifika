@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 const products = [
   {
     name: "MEKANO",
     tagline: "Gestion d'atelier mécanique",
     description:
       "Le logiciel métier des garages et ateliers. Ordres de réparation, facturation, gestion des techniciens — tout en un.",
-    href: "#contact",
+    href: "/solutions/mekano",
     available: true,
     accent: "emerald",
   },
@@ -108,17 +110,17 @@ export default function Home() {
           Écosystème de solutions SaaS pour les entreprises du Pacifique.
         </p>
 
-        <p className="mt-4 max-w-lg text-sm font-medium text-neutral-500 sm:text-base">
+        <p className="mt-4 max-w-lg text-sm font-medium text-neutral-400 sm:text-base">
           Un écosystème.&nbsp; Des solutions.&nbsp; Une même vision.
         </p>
 
         <div className="mt-12 flex flex-col gap-4 sm:flex-row">
-          <a
-            href="#solutions"
+          <Link
+            href="/solutions/mekano"
             className="rounded-full bg-white px-7 py-3 text-sm font-semibold text-neutral-950 transition hover:bg-neutral-200"
           >
             Découvrir MEKANO
-          </a>
+          </Link>
           <a
             href="#solutions"
             className="rounded-full border border-white/20 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
@@ -130,6 +132,7 @@ export default function Home() {
         {/* scroll indicator */}
         <div className="absolute bottom-10 flex flex-col items-center gap-2 text-neutral-600">
           <svg
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
@@ -181,7 +184,7 @@ export default function Home() {
                       className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold ${
                         p.available
                           ? cls.badge
-                          : "bg-white/5 text-neutral-500"
+                          : "bg-white/5 text-neutral-400"
                       }`}
                     >
                       {p.available ? "Disponible" : "Bientôt"}
@@ -198,6 +201,7 @@ export default function Home() {
                     >
                       Accéder à {p.name}
                       <svg
+                        aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
@@ -216,9 +220,9 @@ export default function Home() {
               );
 
               return p.href ? (
-                <a key={p.name} href={p.href}>
+                <Link key={p.name} href={p.href}>
                   {inner}
-                </a>
+                </Link>
               ) : (
                 <div key={p.name}>{inner}</div>
               );
@@ -300,10 +304,10 @@ export default function Home() {
           <span className="text-sm font-bold tracking-widest text-white">
             PACIFIKA
           </span>
-          <p className="text-xs text-neutral-600">
+          <p className="text-xs text-neutral-400">
             Écosystème SaaS pour les entreprises du Pacifique
           </p>
-          <p className="text-xs text-neutral-600">
+          <p className="text-xs text-neutral-400">
             © {new Date().getFullYear()} PACIFIKA · Nouvelle-Calédonie
           </p>
         </div>

@@ -13,9 +13,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PACIFIKA — Écosystème SaaS pour les entreprises du Pacifique",
+  title: "PACIFIKA — Solutions SaaS pour les entreprises du Pacifique",
   description:
-    "PACIFIKA est un écosystème de solutions SaaS verticales conçues pour les entreprises du Pacifique : MEKANO, LOKATO, BOUTIKO, PLANTO.",
+    "PACIFIKA développe des logiciels SaaS simples, modernes et connectés pour accompagner les entreprises du Pacifique dans leur gestion quotidienne.",
+  keywords: [
+    "PACIFIKA",
+    "SaaS Pacifique",
+    "logiciel gestion Nouvelle-Calédonie",
+    "MEKANO",
+    "gestion atelier automobile",
+    "logiciels entreprises Pacifique",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    title: "PACIFIKA — Solutions SaaS pour les entreprises du Pacifique",
+    description:
+      "PACIFIKA développe des logiciels SaaS simples, modernes et connectés pour accompagner les entreprises du Pacifique dans leur gestion quotidienne.",
+    siteName: "PACIFIKA",
+  },
+  twitter: {
+    card: "summary",
+    title: "PACIFIKA — Solutions SaaS pour les entreprises du Pacifique",
+    description:
+      "PACIFIKA développe des logiciels SaaS simples, modernes et connectés pour accompagner les entreprises du Pacifique dans leur gestion quotidienne.",
+  },
 };
 
 export default function RootLayout({
